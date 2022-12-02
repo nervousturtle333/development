@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function BakeryItem({item, readingList, addToReadingList, removeFromReadingList}) {
     return (
         <Card style={{ width: "18rem", overflow: "hidden" }}>
-            <Card.Img variant="top" src={item.image} />
+            <Card.Img variant="top" src={item.image} style={{ width: "18rem", height: "300px" }} />
+
             <Card.Body>
                 <Card.Title> {item.name} </Card.Title>
                 <Card.Subtitle>Price: {item.price}$ </Card.Subtitle>
